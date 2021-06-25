@@ -1,0 +1,28 @@
+.web-bg {
+  @include transition(opacity 1s ease);
+  position: absolute;
+  top: -2%;
+  left: -2%;
+  width: 104%;
+  height: 104%;
+  opacity: 0;
+
+  background-color: #000;
+}
+
+// #bg1{
+//   opacity: 1;
+//   background-image: url('../img/work/img3.jpg');
+// }
+
+// #bg2 {
+//   background-image: url('../img/work/img2.jpg');
+// }
+
+// #bg3 {
+//   background-image: url('../img/work/img1.jpg');
+// }
+
+// #bg4 {
+//   background-image: url('../img/work/img4.jpg');
+// }

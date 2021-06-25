@@ -1,16 +1,77 @@
-$theme-colors: (
-    "primary": #ff3a52,
-    "dark": #000000
-);
+@import "node_modules/bootstrap/scss/functions";
+// @import "node_modules/bootstrap/scss/variables";
+@import "bootstrap/variables";
+@import "node_modules/bootstrap/scss/mixins";
+@import "node_modules/bootstrap/scss/root";
+@import "node_modules/bootstrap/scss/reboot";
+@import "node_modules/bootstrap/scss/type";
+@import "node_modules/bootstrap/scss/images";
+@import "node_modules/bootstrap/scss/code";
+@import "node_modules/bootstrap/scss/grid";
+// @import "bootstrap/grid";
+@import "node_modules/bootstrap/scss/tables";
+@import "node_modules/bootstrap/scss/forms";
+@import "node_modules/bootstrap/scss/buttons";
+@import "node_modules/bootstrap/scss/transitions";
+@import "node_modules/bootstrap/scss/dropdown";
+@import "node_modules/bootstrap/scss/button-group";
+@import "node_modules/bootstrap/scss/input-group";
+@import "node_modules/bootstrap/scss/custom-forms";
+@import "node_modules/bootstrap/scss/nav";
+@import "node_modules/bootstrap/scss/navbar";
+@import "node_modules/bootstrap/scss/card";
+@import "node_modules/bootstrap/scss/breadcrumb";
+@import "node_modules/bootstrap/scss/pagination";
+@import "node_modules/bootstrap/scss/badge";
+@import "node_modules/bootstrap/scss/jumbotron";
+@import "node_modules/bootstrap/scss/alert";
+@import "node_modules/bootstrap/scss/progress";
+@import "node_modules/bootstrap/scss/media";
+@import "node_modules/bootstrap/scss/list-group";
+@import "node_modules/bootstrap/scss/close";
+@import "node_modules/bootstrap/scss/toasts";
+@import "node_modules/bootstrap/scss/modal";
+@import "node_modules/bootstrap/scss/tooltip";
+@import "node_modules/bootstrap/scss/popover";
+@import "node_modules/bootstrap/scss/carousel";
+@import "node_modules/bootstrap/scss/spinners";
+@import "node_modules/bootstrap/scss/utilities";
+@import "node_modules/bootstrap/scss/print";
 
-@import "node_modules/bootstrap/scss/bootstrap";
+// @import "node_modules/bootstrap/scss/bootstrap";
+@import "variables";
+@import "mixins/cross-mixins.scss";
+@import "animation.scss";
+@import "fonts";
+@import "logo";
+@import "menu";
+@import "main";
+@import "web-bg";
+@import "responsive";
 
-body {
-    padding-top:56px;
+@media (min-width:641px) {
+    body {
+    }
 }
-.footer {
-    margin-top:3rem;
+
+.container {
+    max-width: none !important;
+    // width: 970px;
 }
-.navbar {
-    border-bottom:1px solid #eee;
+
+#bg1 {
+    opacity: 1;
+    background-image: url('./img/work/img3.jpg');
+}
+
+#bg2 {
+    background-image: url('../img/work/img2.jpg');
+}
+
+#bg3 {
+    background-image: url('../img/work/img1.jpg');
+}
+
+#bg4 {
+    background-image: url('../img/work/img4.jpg');
 }

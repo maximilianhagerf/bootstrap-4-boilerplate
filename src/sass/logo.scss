@@ -1,0 +1,81 @@
+section.presentation {
+  .logo_container {
+    outline: none;
+    position: absolute;
+    right: 30px;
+
+    .logo {}
+  }
+}
+
+.logo {
+  width: 80px;
+  @include transition(all .2s ease);
+
+  .st0 {
+    fill: #333333;
+  }
+
+  .xst1,
+  .st2 {
+    fill: theme-color("primary");
+  }
+
+  .st2 {
+    @include transition(all .2s ease);
+    position: relative;
+  }
+
+  &_container {
+    display: inline-block;
+    // display: none;
+    width: 110px;
+    height: 110px;
+    text-align: center;
+
+    &:hover {
+      .logo {
+        @include transform(rotateZ(-45deg));
+
+        .st2 {
+          @include transform(translate(-40px, 40px));
+          top: 30px;
+        }
+      }
+
+    }
+  }
+}
+
+.footer {
+  .logo {
+    width: 80px;
+  }
+}
+
+/**/
+
+.dino {
+      @include transform(translate3d(5px, 0, 0));
+  .wst4{
+    stroke: #1D7887,
+  }
+  #Layer_1 {
+    circle {
+        @include transition(all 1s ease);
+        stroke-dasharray: 800;
+        stroke-dashoffset: 800;
+      // @include animation(opacityFadeIn 1s forwards);
+    }
+  }
+
+  &:hover {
+    #Layer_1 {
+      circle {
+        // @include animation(opacityFadeOut .5s forwards);
+        stroke-dashoffset: 0;
+      }
+    }
+  }
+
+}

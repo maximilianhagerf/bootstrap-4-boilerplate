@@ -1,0 +1,17 @@
+/*
+******** colors
+*/
+
+$footer_text: #333;
+
+$enable-prefers-reduced-motion-media-query: false;
+$theme-colors: (
+  "primary": #d817c8,
+  // "primary": #3D0BA1,
+  // "primary": #dc3545,
+  // "primary": #ffe000,
+  "dark": #000000,
+  "gray": $footer_text,
+  "bright": #efefef);
+
+
